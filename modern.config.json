@@ -1,0 +1,98 @@
+{
+  "source": {
+    "disableDefaultEntries": false,
+    "entriesDir": "./src",
+    "configDir": "./config",
+    "apiDir": "./api",
+    "envVars": [],
+    "alias": {
+      "@modern-js/runtime$": "/Users/wqw/Documents/js/todoList/node_modules/.modern-js/.runtime-exports/index.js",
+      "styled-components": "/Users/wqw/Documents/js/todoList/node_modules/.pnpm/registry.npmmirror.com+styled-components@5.3.5_281a4fa50a045c9112baf635f3bc27a7/node_modules/styled-components/dist/styled-components.cjs.js",
+      "@modern-js/runtime/plugins": "/Users/wqw/Documents/js/todoList/node_modules/.modern-js/.runtime-exports/plugins.js"
+    },
+    "include": []
+  },
+  "output": {
+    "assetPrefix": "/",
+    "htmlPath": "html",
+    "jsPath": "static/js",
+    "cssPath": "static/css",
+    "mediaPath": "static/media",
+    "path": "build",
+    "title": "TodoList",
+    "meta": {
+      "charset": {
+        "charset": "utf-8"
+      },
+      "viewport": "width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+      "http-equiv": {
+        "http-equiv": "x-ua-compatible",
+        "content": "ie=edge"
+      },
+      "renderer": "webkit",
+      "layoutmode": "standard",
+      "imagemode": "force",
+      "wap-font-scale": "no",
+      "format-detection": "telephone=no"
+    },
+    "inject": "head",
+    "mountId": "root",
+    "favicon": "./src/assets/favicon.ico",
+    "disableHtmlFolder": false,
+    "disableCssModuleExtension": false,
+    "disableCssExtract": false,
+    "enableCssModuleTSDeclaration": false,
+    "disableMinimize": false,
+    "enableInlineStyles": false,
+    "enableInlineScripts": false,
+    "disableSourceMap": false,
+    "disableInlineRuntimeChunk": false,
+    "disableAssetsCache": false,
+    "enableLatestDecorators": false,
+    "polyfill": "entry",
+    "dataUriLimit": 10000,
+    "templateParameters": {},
+    "cssModuleLocalIdentName": "[name]__[local]--[hash:base64:5]",
+    "enableModernMode": false,
+    "disableNodePolyfill": false,
+    "enableTsLoader": false
+  },
+  "server": {
+    "baseUrl": "/",
+    "port": 8080
+  },
+  "dev": {
+    "assetPrefix": false,
+    "https": false
+  },
+  "deploy": {
+    "domain": ""
+  },
+  "tools": {
+    "babel": [
+      null
+    ],
+    "devServer": {},
+    "webpackChain": [
+      null
+    ]
+  },
+  "plugins": [],
+  "runtime": {
+    "router": true,
+    "state": true
+  },
+  "runtimeByEntries": {},
+  "_raw": {
+    "output": {
+      "path": "build",
+      "title": "TodoList",
+      "favicon": "./src/assets/favicon.ico"
+    },
+    "runtime": {
+      "router": true,
+      "state": true
+    }
+  },
+  "cliOptions": {}
+}
