@@ -22,7 +22,7 @@ node_modules/
 *.tsbuildinfo
 .eslintcache
 .sonarlint
-
+docs/
 coverage/
 release/
 output/

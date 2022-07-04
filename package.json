@@ -1,6 +1,7 @@
 {
   "name": "todoList",
   "version": "0.1.0",
+  "homepage": ".",
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
     "dev": "modern dev",
