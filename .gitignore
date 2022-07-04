@@ -1,5 +1,5 @@
 .DS_Store
-
+build
 .pnp
 .pnp.js
 .env
@@ -14,7 +14,7 @@
 *.lcov
 lib-cov
 
-node_modules/
+node_modules
 .npm
 .lock-wscript
 .yarn-integrity
@@ -23,7 +23,6 @@ node_modules/
 *.tsbuildinfo
 .eslintcache
 .sonarlint
-build/
 coverage/
 release/
 output/
