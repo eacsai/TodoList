@@ -1,7 +1,7 @@
 {
   "name": "todoList",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://eacsai.github.io/TodoList.github.io",
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
     "dev": "modern dev",
@@ -9,7 +9,8 @@
     "start": "modern start",
     "new": "modern new",
     "lint": "modern lint",
-    "deploy": "modern deploy"
+    "deploy": "modern deploy",
+    "gitpage": "gh-pages -d build"
   },
   "engines": {
     "node": ">=14.17.6"
@@ -30,6 +31,7 @@
   "eslintIgnore": [
     "node_modules/",
     "dist/",
+    "docs/",
     "build/"
   ],
   "dependencies": {
@@ -57,11 +59,14 @@
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
+    "gh-pages": "^4.0.0",
     "husky": "4.3.8",
     "lint-staged": "^11.2.6",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "@modern-js/plugin-cdn-oss": "1.1.10",
+    "@modern-js/plugin-lambda-fc": "1.1.9"
   },
   "modernConfig": {
     "runtime": {

@@ -3,7 +3,6 @@
     "main.js": "/static/js/main.js",
     "runtime-main.js": "/static/js/runtime-main.js",
     "static/js/vendors-node_modules_pnpm_registry_npmmirror_com_modern-js_hmr-client_1_2_8_node_modules_mode-e9c041.js": "/static/js/vendors-node_modules_pnpm_registry_npmmirror_com_modern-js_hmr-client_1_2_8_node_modules_mode-e9c041.js",
-    "favicon.ico": "/favicon.ico",
     "html/main/index.html": "/html/main/index.html",
     "main.js.map": "/static/js/main.js.map",
     "runtime-main.js.map": "/static/js/runtime-main.js.map",

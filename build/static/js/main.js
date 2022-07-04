@@ -693,12 +693,12 @@ var TodoList = /*#__PURE__*/_s( /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_3
     setTodos([].concat((0,_Users_wqw_Documents_js_todoList_node_modules_pnpm_registry_npmmirror_com_babel_runtime_7_18_6_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(todosRef.current), [newTodo]));
   }, []);
   var remove = (0,react__WEBPACK_IMPORTED_MODULE_3__.useCallback)(function (id) {
-    setTodos(todos.filter(function (todo) {
+    setTodos(todosRef.current.filter(function (todo) {
       return todo.id !== id;
     }));
-  }, [todos]);
+  }, []);
   var update = (0,react__WEBPACK_IMPORTED_MODULE_3__.useCallback)(function (id, updtedTask) {
-    var updatedTodos = todos.map(function (todo) {
+    var updatedTodos = todosRef.current.map(function (todo) {
       if (todo.id === id) {
         return (0,_Users_wqw_Documents_js_todoList_node_modules_pnpm_registry_npmmirror_com_babel_runtime_7_18_6_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__["default"])((0,_Users_wqw_Documents_js_todoList_node_modules_pnpm_registry_npmmirror_com_babel_runtime_7_18_6_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__["default"])({}, todo), {}, {
           task: updtedTask
@@ -708,9 +708,9 @@ var TodoList = /*#__PURE__*/_s( /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_3
       return todo;
     });
     setTodos(updatedTodos);
-  }, [todos]);
+  }, []);
   var finish = (0,react__WEBPACK_IMPORTED_MODULE_3__.useCallback)(function (id) {
-    var updatedTodos = todos.map(function (todo) {
+    var updatedTodos = todosRef.current.map(function (todo) {
       if (todo.id === id) {
         return (0,_Users_wqw_Documents_js_todoList_node_modules_pnpm_registry_npmmirror_com_babel_runtime_7_18_6_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__["default"])((0,_Users_wqw_Documents_js_todoList_node_modules_pnpm_registry_npmmirror_com_babel_runtime_7_18_6_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__["default"])({}, todo), {}, {
           completed: !todo.completed
@@ -720,7 +720,7 @@ var TodoList = /*#__PURE__*/_s( /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_3
       return todo;
     });
     setTodos(updatedTodos);
-  }, [todos]);
+  }, []);
   var todosList = todos.map(function (todo) {
     return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_todo__WEBPACK_IMPORTED_MODULE_4__["default"], {
       finish: finish,
@@ -729,7 +729,7 @@ var TodoList = /*#__PURE__*/_s( /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_3
       todo: todo
     }, todo.id, false, {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 62,
       columnNumber: 5
     }, _this);
   });
@@ -751,34 +751,34 @@ var TodoList = /*#__PURE__*/_s( /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_3
           children: "A simple React Todo List App"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 96,
+          lineNumber: 87,
           columnNumber: 21
         }, _this)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 95,
+        lineNumber: 86,
         columnNumber: 9
       }, _this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)("ul", {
         children: todosList
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 89,
         columnNumber: 9
       }, _this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxDEV)(_todoForm__WEBPACK_IMPORTED_MODULE_5__["default"], {
         createTodo: create
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 90,
         columnNumber: 9
       }, _this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 85,
       columnNumber: 7
     }, _this)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 81,
+    lineNumber: 72,
     columnNumber: 5
   }, _this);
 }, "iaJLHiPDhOHhRIej86Y2/UVntRg=", false, function () {

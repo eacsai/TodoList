@@ -34,38 +34,29 @@ const TodoList: FC = memo(() => {
     setTodos([...todosRef.current, newTodo]);
   }, []);
 
-  const remove = useCallback(
-    (id: string) => {
-      setTodos(todos.filter(todo => todo.id !== id));
-    },
-    [todos],
-  );
+  const remove = useCallback((id: string) => {
+    setTodos(todosRef.current.filter(todo => todo.id !== id));
+  }, []);
 
-  const update = useCallback(
-    (id: string, updtedTask: string) => {
-      const updatedTodos = todos.map(todo => {
-        if (todo.id === id) {
-          return { ...todo, task: updtedTask };
-        }
-        return todo;
-      });
-      setTodos(updatedTodos);
-    },
-    [todos],
-  );
+  const update = useCallback((id: string, updtedTask: string) => {
+    const updatedTodos = todosRef.current.map(todo => {
+      if (todo.id === id) {
+        return { ...todo, task: updtedTask };
+      }
+      return todo;
+    });
+    setTodos(updatedTodos);
+  }, []);
 
-  const finish = useCallback(
-    (id: string) => {
-      const updatedTodos = todos.map(todo => {
-        if (todo.id === id) {
-          return { ...todo, completed: !todo.completed };
-        }
-        return todo;
-      });
-      setTodos(updatedTodos);
-    },
-    [todos],
-  );
+  const finish = useCallback((id: string) => {
+    const updatedTodos = todosRef.current.map(todo => {
+      if (todo.id === id) {
+        return { ...todo, completed: !todo.completed };
+      }
+      return todo;
+    });
+    setTodos(updatedTodos);
+  }, []);
 
   const todosList = todos.map(todo => (
     <Todo

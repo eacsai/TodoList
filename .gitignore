@@ -2,6 +2,7 @@
 
 .pnp
 .pnp.js
+.env
 .env.local
 .env.*.local
 .history
@@ -22,6 +23,7 @@ node_modules/
 *.tsbuildinfo
 .eslintcache
 .sonarlint
+build/
 coverage/
 release/
 output/
