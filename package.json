@@ -28,7 +28,8 @@
   },
   "eslintIgnore": [
     "node_modules/",
-    "dist/"
+    "dist/",
+    "build/"
   ],
   "dependencies": {
     "@modern-js/runtime": "^1.0.0",
