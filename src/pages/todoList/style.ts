@@ -4,7 +4,7 @@ export const TodoListWrapper = styled.div`
   margin: 4rem auto;
   padding: 2rem 3rem 3rem;
   max-width: 500px;
-  background: #ff6666;
+  background: #b194948c;
   color: #fff;
   box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
   ul {

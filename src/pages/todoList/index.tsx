@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Todo from '../todo';
 import TodoForm from '../todoForm';
 import { TodoListWrapper } from './style';
+import useSize from '@/hooks/useSize';
 
 interface NewTodo {
   id: string;
@@ -11,6 +12,7 @@ interface NewTodo {
 }
 
 const TodoList: FC = memo(() => {
+  const { height, width } = useSize();
   const [todos, setTodos] = useState([
     { id: uuidv4(), task: 'task 1', completed: false },
     { id: uuidv4(), task: 'task 2', completed: true },
@@ -76,13 +78,27 @@ const TodoList: FC = memo(() => {
   ));
 
   return (
-    <TodoListWrapper>
-      <h1>
-        Todo List <span>A simple React Todo List App</span>
-      </h1>
-      <ul>{todosList}</ul>
-      <TodoForm createTodo={create} />
-    </TodoListWrapper>
+    <div
+      style={{
+        background: `url("https://w.wallhaven.cc/full/l3/wallhaven-l3xk6q.jpg")`,
+        width: `${width}px`,
+        minHeight: `${height}px`,
+        backgroundSize: 'cover',
+        overflow: 'hidden',
+        display: 'flex',
+        alignContent: 'center',
+        justifyContent: 'center',
+        margin: '-8px',
+      }}
+    >
+      <TodoListWrapper>
+        <h1>
+          Todo List <span>A simple React Todo List App</span>
+        </h1>
+        <ul>{todosList}</ul>
+        <TodoForm createTodo={create} />
+      </TodoListWrapper>
+    </div>
   );
 });
 
