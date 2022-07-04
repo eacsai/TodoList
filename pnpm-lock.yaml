@@ -4,10 +4,12 @@ specifiers:
   '@modern-js/app-tools': ^1.0.0
   '@modern-js/runtime': ^1.0.0
   '@modern-js/tsconfig': ^1.0.0
-  '@types/node': ^14
-  '@types/react': ^17
-  '@types/react-dom': ^17
+  '@types/node': ^14.18.21
+  '@types/react': ^17.0.47
+  '@types/react-dom': ^17.0.17
   '@types/react-router-config': ^5.0.6
+  '@types/redux-immutable': ^4.0.3
+  '@types/uuid': ^8.3.4
   '@typescript-eslint/eslint-plugin': ^5.30.0
   '@typescript-eslint/parser': ^5.30.0
   husky: 4.3.8
@@ -15,25 +17,31 @@ specifiers:
   prettier: ^2.6.2
   react: ^17.0.2
   react-dom: ^17.0.1
+  react-icons: ^4.4.0
   react-redux: ^8.0.2
   react-router: ^6.3.0
   react-router-config: ^5.1.1
+  react-router-dom: ^6.3.0
   redux: ^4.2.0
   redux-immutable: ^4.0.0
   redux-thunk: ^2.4.1
   rimraf: ^3.0.2
-  typescript: ^4
+  typescript: ^4.7.4
+  uuid: ^8.3.2
 
 dependencies:
   '@modern-js/runtime': registry.npmmirror.com/@modern-js/runtime/1.3.4_dccc44159aab2d15be0b73def9353315
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+  react-icons: registry.npmmirror.com/react-icons/4.4.0_react@17.0.2
   react-redux: registry.npmmirror.com/react-redux/8.0.2_0cd018275506a832575238242009870f
   react-router: registry.npmmirror.com/react-router/6.3.0_react@17.0.2
   react-router-config: registry.npmmirror.com/react-router-config/5.1.1_react-router@6.3.0+react@17.0.2
+  react-router-dom: registry.npmmirror.com/react-router-dom/6.3.0_react-dom@17.0.2+react@17.0.2
   redux: registry.npmmirror.com/redux/4.2.0
   redux-immutable: registry.npmmirror.com/redux-immutable/4.0.0
   redux-thunk: registry.npmmirror.com/redux-thunk/2.4.1_redux@4.2.0
+  uuid: registry.npmmirror.com/uuid/8.3.2
 
 devDependencies:
   '@modern-js/app-tools': registry.npmmirror.com/@modern-js/app-tools/1.6.10_typescript@4.7.4
@@ -42,6 +50,8 @@ devDependencies:
   '@types/react': registry.npmmirror.com/@types/react/17.0.47
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.17
   '@types/react-router-config': registry.npmmirror.com/@types/react-router-config/5.0.6
+  '@types/redux-immutable': registry.npmmirror.com/@types/redux-immutable/4.0.3
+  '@types/uuid': registry.npmmirror.com/@types/uuid/8.3.4
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.30.0_344e0764d61f4412bd50f957d03f08e7
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.30.0_typescript@4.7.4
   husky: registry.npmmirror.com/husky/4.3.8
@@ -3120,6 +3130,15 @@ packages:
       '@types/scheduler': registry.npmmirror.com/@types/scheduler/0.16.2
       csstype: registry.npmmirror.com/csstype/3.1.0
 
+  registry.npmmirror.com/@types/redux-immutable/4.0.3:
+    resolution: {integrity: sha512-wXUApt9ib9MGUqoHUMbQmQhqCkvykMHBW3z/P7DISMigFGpGRQ0kkbv7we0XNiv5sYEtEiZzNCEDm+W6ei04DA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/redux-immutable/-/redux-immutable-4.0.3.tgz}
+    name: '@types/redux-immutable'
+    version: 4.0.3
+    dependencies:
+      immutable: registry.npmmirror.com/immutable/4.1.0
+      redux: registry.npmmirror.com/redux/4.2.0
+    dev: true
+
   registry.npmmirror.com/@types/redux-logger/3.0.9:
     resolution: {integrity: sha512-cwYhVbYNgH01aepeMwhd0ABX6fhVB2rcQ9m80u8Fl50ZODhsZ8RhQArnLTkE7/Zrfq4Sz/taNoF7DQy9pCZSKg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/redux-logger/-/redux-logger-3.0.9.tgz}
     name: '@types/redux-logger'
@@ -3169,6 +3188,12 @@ packages:
     name: '@types/use-sync-external-store'
     version: 0.0.3
     dev: false
+
+  registry.npmmirror.com/@types/uuid/8.3.4:
+    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/uuid/-/uuid-8.3.4.tgz}
+    name: '@types/uuid'
+    version: 8.3.4
+    dev: true
 
   registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.30.0_29006597364a32ccbe0ed961d4d2e925:
     resolution: {integrity: sha512-lvhRJ2pGe2V9MEU46ELTdiHgiAFZPKtLhiU5wlnaYpMc2+c1R8fh8i80ZAa665drvjHKUJyRRGg3gEm1If54ow==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.30.0.tgz}
@@ -6577,6 +6602,12 @@ packages:
     version: 9.0.15
     dev: false
 
+  registry.npmmirror.com/immutable/4.1.0:
+    resolution: {integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immutable/-/immutable-4.1.0.tgz}
+    name: immutable
+    version: 4.1.0
+    dev: true
+
   registry.npmmirror.com/import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/import-fresh/-/import-fresh-3.3.0.tgz}
     name: import-fresh
@@ -8606,6 +8637,17 @@ packages:
       react-side-effect: registry.npmmirror.com/react-side-effect/2.1.2_react@17.0.2
     dev: false
 
+  registry.npmmirror.com/react-icons/4.4.0_react@17.0.2:
+    resolution: {integrity: sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-icons/-/react-icons-4.4.0.tgz}
+    id: registry.npmmirror.com/react-icons/4.4.0
+    name: react-icons
+    version: 4.4.0
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: registry.npmmirror.com/react/17.0.2
+    dev: false
+
   registry.npmmirror.com/react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz}
     name: react-is
@@ -8696,6 +8738,21 @@ packages:
       react-router: registry.npmmirror.com/react-router/5.3.3_react@17.0.2
       tiny-invariant: registry.npmmirror.com/tiny-invariant/1.2.0
       tiny-warning: registry.npmmirror.com/tiny-warning/1.0.3
+    dev: false
+
+  registry.npmmirror.com/react-router-dom/6.3.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-router-dom/-/react-router-dom-6.3.0.tgz}
+    id: registry.npmmirror.com/react-router-dom/6.3.0
+    name: react-router-dom
+    version: 6.3.0
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      history: registry.npmmirror.com/history/5.3.0
+      react: registry.npmmirror.com/react/17.0.2
+      react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
+      react-router: registry.npmmirror.com/react-router/6.3.0_react@17.0.2
     dev: false
 
   registry.npmmirror.com/react-router/5.3.3_react@17.0.2:
@@ -8827,7 +8884,6 @@ packages:
     version: 4.2.0
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.6
-    dev: false
 
   registry.npmmirror.com/regenerate-unicode-properties/10.0.1:
     resolution: {integrity: sha512-vn5DU6yg6h8hP/2OkQo3K7uVILvY4iu0oI4t3HFa81UPkhGJwkRwM10JEc3upjdhHjs/k8GJY1sRBhk5sr69Bw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/regenerate-unicode-properties/-/regenerate-unicode-properties-10.0.1.tgz}
@@ -9961,6 +10017,13 @@ packages:
     resolution: {integrity: sha512-Z0DbgELS9/L/75wZbro8xAnT50pBVFQZ+hUEueGDU5FN51YSCYM+jdxsfCiHjwNP/4LCDD0i/graKpeBnOXKRA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/utila/-/utila-0.4.0.tgz}
     name: utila
     version: 0.4.0
+
+  registry.npmmirror.com/uuid/8.3.2:
+    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uuid/-/uuid-8.3.2.tgz}
+    name: uuid
+    version: 8.3.2
+    hasBin: true
+    dev: false
 
   registry.npmmirror.com/v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz}
